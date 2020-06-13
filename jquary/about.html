@@ -442,7 +442,33 @@ button
 }
 i{
   margin-top: 8%;
-  margin-left: 2.5%;
+  margin-left: 4%;
+}
+ .container {
+  position: relative;
+  width: 80%;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 200px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+#com{
+  font-size: 12px;
 }
 .glow {
   font-size: 25px;
@@ -452,6 +478,12 @@ i{
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
+}
+.text {
+  background-color:rgba(243,243,243,0.61) ;
+  color: #000;
+  font-size: 18px;
+  padding: 8px 8px;
 }
 p{
   font-size: 12px;
@@ -559,9 +591,9 @@ p{
 
  <a href="new.html"><button type="button" class="btn btn-outline-primary">Home</button></a>
  <a href="photo.html"><button type="button" class="btn btn-outline-warning">Contain</button></a>
-<a href="code1.html"><button type="button" class="btn btn-outline-secondary">Code Arena</button></a>
+<a href="code1.html"><button type="button" id="com" class="btn btn-outline-secondary">Code Arena</button></a>
 
-<a href="code.html"><button type="button" class="btn btn-outline-danger">The Spleash</button></a>
+<a href="code.html"><button type="button" class="btn btn-outline-danger">Spleash</button></a>
 
 <a href="about.html"><button type="button" class="btn btn-outline-success">About</button></a>
 <a href="login.html"><button type="button" class="btn btn-outline-info">Login</button></a>
@@ -707,7 +739,7 @@ p{
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://sagnic007.github.io/thebunker/jquary/new.html"><b color="cyan"> Bunker.com</b></a>
+    <a href="https://sagnic007.github.io/bunkern/jquary/new.html"><b color="cyan"> Bunker.io</b></a>
   </div>
   <!-- Copyright -->
 
