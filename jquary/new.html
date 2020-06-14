@@ -56,6 +56,50 @@ i{
   height: 100%;
 } 
 
+#d3
+{
+  width: 95%;
+  margin-left: 2.5%;
+  float: left;
+  border-radius: 20%;
+  height: 100%;
+}
+
+#d31{
+  width: 28%;
+  margin-left:1%;
+  height:25vw;
+  border-radius: 30%;
+  float:left;
+  
+} 
+#rad
+{
+  border-radius: 8%;
+}
+#d32{
+  width: 67%;
+  margin-left: 3%;
+  height: 25vw;
+  float: left;
+  padding-left: 1%;
+  padding-top: 2%;
+  border-radius: 6%;
+  background-color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #F7F8F8;
+
+}
+
+#d4
+{
+  width: 95%;
+  margin-left: 2.5%;
+  float: left;
+  height: 100%;
+  background-color: white;
+} 
+
 
 
 .container1 {
@@ -244,6 +288,25 @@ p{
   padding-left: 4px;
  
 }
+.glow {
+  
+  color: #fff;
+ font-family: 'Lobster', cursive;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00CDAC, 0 0 40px ##00CDAC, 0 0 50px #ec38bc, 0 0 60px #ec38bc, 0 0 70px #ec38bc;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px#f12711, 0 0 40px #f12711, 0 0 50px #f12711, 0 0 60px #f12711, 0 0 70px #f12711, 0 0 50px#f12711;
+  }
+  }
 
 @media(max-width:768px){
   h2
@@ -312,6 +375,11 @@ p{
   #navbar-brand a
   {
     font-size: 30px;
+  }
+
+
+  #img{
+    height: 15vw;
   }
 }
 @media(max-width: 425px ){
@@ -467,6 +535,20 @@ margin-top: 40px;
   </div></a>
 
 </div>
+
+
+<div id="d3" class="shadow-lg p-3 mb-5 bg-white rounded">
+  
+<div id="d31">
+  <img id="rad" src="coding.jpg" width="100%"></div>
+
+  <div id="d32">
+  <font color="orange" size="5px" class="glow" > &nbsp;Advanced C progrming ..<b> </b></font>
+  <img id="img" src="cmsn.png">
+</div>
+</div>
+
+
 </div>
 <!-- Footer -->
 <footer  class="page-footer font-small ">
