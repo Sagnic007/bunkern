@@ -10,54 +10,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet"  href="css/bootstrap.min.css">
     <link rel="stylesheet"  href="stylemenu.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
       <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
       <style >
-
-
-
-        /* Column container */
-.row {  
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-/* Main column */
-.main {   
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-}
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
         #d0
   {
     height:60px;
@@ -71,7 +29,38 @@
   i{
   margin-left: 2%;
 }
+/* Style the side navigation */
+.sidenav {
+  height: 50vw;
+  width: 15%;
+  z-index: 1;
+  top: 25%;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+}
 
+
+/* Side navigation links */
+.sidenav a {
+  color: white;
+  margin-top: 20%;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content1 {
+  margin-left: 200px;
+  padding-left: 20px;
+}
    footer {
   
   left: 0;
@@ -110,6 +99,14 @@ background: linear-gradient(to bottom, #16222A,#3A6073); /* W3C, IE 10+/ Edge, F
   background-size: cover;
   float: left;
   
+}
+#d2
+{
+  width: 95%;
+  height: 45vw;
+  margin-left: 2.5%;
+  margin-top: 2%;
+
 }
 #contain{
   height: 100%;
@@ -783,14 +780,14 @@ p{
   <!-- Navbar content -->
 
 
- <a href="new.html"><button type="button" class="btn btn-outline-primary">Home</button></a>
- <a href="photo.html"><button type="button" class="btn btn-outline-warning">Contain</button></a>
-<a href="code1.html"><button type="button" id="com" class="btn btn-outline-secondary">Code Arena</button></a>
+ <a href="new.html"><button type="button1" class="btn btn-outline-primary"><font color="blue">Home</font></button></a>
+ <a href="photo.html"><button type="button1" class="btn btn-outline-warning"><font color="yellow">Omega</font></button></a>
+<a href="code1.html"><button type="button1" id="com" class="btn btn-outline-secondary"><font color="gray">Code Arena</font></button></a>
 
-<a href="code.html"><button type="button" class="btn btn-outline-danger">Spleash</button></a>
+<a href="code.html"><button type="button1" class="btn btn-outline-danger"><font color="red">Spleash</font></button></a>
 
-<a href="about.html"><button type="button" class="btn btn-outline-success">About</button></a>
-<a href="login.html"><button type="button" class="btn btn-outline-info">Login</button></a>
+<a href="about.html"><button type="button1" class="btn btn-outline-success"><font color="green">About</font></button></a>
+<a href="login.html"><button type="button1" class="btn btn-outline-info"><font color="cyan">Login</font></button></a>
 </nav>
 
 <div id="d1">
@@ -815,32 +812,90 @@ p{
 
  </div>
 
- <div class="row">
-  <div class="side">
-    <h2>About Me</h2>
-    <h5>Photo of me:</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    <h3>More Text</h3>
-    <p>Lorem ipsum dolor sit ame.</p>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div>
-  </div>
-  <div class="main">
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Dec 7, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    <br>
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Sep 2, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-  </div>
-</div>
+ <section id="banner" data-video="images/banner">
+          <div class="inner">
+            <header>
+              <h1>Bunker Demo</h1>
+              <p>A responsive video gallery template with a functional lightbox<br />
+              designed by <a href="https://templated.co/">Templated</a> and released under the Creative Commons License.</p>
+            </header>
+            <a href="#main" class="more">Learn More</a>
+          </div>
+        </section>
+
+      <!-- Main -->
+        <div id="main">
+          <div class="inner">
+
+          <!-- Boxes -->
+            <div class="thumbnails">
+
+              <div class="box">
+                <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="web1.jpg" alt="" /></a>
+                <div class="inner">
+                  <h3>Nascetur nunc varius commodo</h3>
+                  <p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
+                  <a id="link" href="demor1.html" class="button fit" data-poptrox="youtube,800x400">Demo</a>
+                  <a id="link" href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Link</a>
+                </div>
+              </div>
+
+              <div class="box">
+                <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="web2.jpg" alt="" /></a>
+                <div class="inner">
+                  <h3>Nascetur nunc varius commodo</h3>
+                  <p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
+                  <a id="link" href="demor2.html" class="button style2 fit" data-poptrox="youtube,800x400">Demo</a>
+                   <a id="link" href="https://youtu.be/s6zR2T9vn2c" class="button style2 fit" data-poptrox="youtube,800x400">Link</a>
+                </div>
+              </div>
+
+              <div class="box">
+                <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="web3.jpg" alt="" /></a>
+                <div class="inner">
+                  <h3>Nascetur nunc varius commodo</h3>
+                  <p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
+                  <a id="link" href="demor3.html" class="button style3 fit" data-poptrox="youtube,800x400">Demo</a>
+                  <a id="link" href="https://youtu.be/s6zR2T9vn2c" class="button style3 fit" data-poptrox="youtube,800x400">Link</a>
+                </div>
+              </div>
+
+              <div class="box">
+                <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="web4.jpg" alt="" /></a>
+                <div class="inner">
+                  <h3>Nascetur nunc varius commodo</h3>
+                  <p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
+                  <a id="link" href="demor4.html" class="button style2 fit" data-poptrox="youtube,800x400">Demo</a>
+                  <a id="link" href="https://youtu.be/s6zR2T9vn2c" class="button style2 fit" data-poptrox="youtube,800x400">Link</a>
+                </div>
+              </div>
+
+              <div class="box">
+                <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="web5.jpg" alt="" /></a>
+                <div class="inner">
+                  <h3>Nascetur nunc varius commodo</h3>
+                  <p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
+                  <a id="link" href="demo5.html" class="button style3 fit" data-poptrox="youtube,800x400">Demo</a>
+                  <a id="link" href="https://youtu.be/s6zR2T9vn2c" class="button style3 fit" data-poptrox="youtube,800x400">Link</a>
+                </div>
+              </div>
+
+              <div class="box">
+                <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="web6.jpg" alt="" /></a>
+                <div class="inner">
+                  <h3>Nascetur nunc varius commodo</h3>
+                  <p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
+                  <a id="link" href="demor61.html" class="button fit" data-poptrox="youtube,800x400">Demo</a>
+                  <a id="link" href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Link</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+</div></div>
+
   
 </div>
 
@@ -917,5 +972,11 @@ p{
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
      <script src="script2.js"></script>
+     <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/jquery.poptrox.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
   </body>
 </html>
