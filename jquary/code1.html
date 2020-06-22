@@ -2047,19 +2047,276 @@ For integer data types, + operator is used to perform arithmetic addition operat
 
   </div>
   <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"><font color="cyan">Code:<br><br>
-    num1 = 1<br>
-    num2 = 2<br>
-    print(num1+num2)</font><br><br>
+    &nbsp;&nbsp;&nbsp; num1 = 1<br>
+    &nbsp;&nbsp;&nbsp; num2 = 2<br>
+    &nbsp;&nbsp;&nbsp;print(num1+num2)</font><br><br>
 
     <font color="yellow">Output:<br><br>
-      3</div>
+     &nbsp;&nbsp;&nbsp; 3
+   </div>
+ </font>
   <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-</div>
     
-    </div></div>
+    </div>
+  </div>
 
   </li>
   </ul>
+</div>
+
+<div style="margin-left:5%;">
+  
+  <h4>What is Python?</h4>
+<p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+
+It is used for:
+
+web development (server-side),
+software development,
+mathematics,
+system scripting.
+<h5>What can Python do?</h5>
+<ul>
+<li>Python can be used on a server to create web applications.</li>
+<li>Python can be used alongside software to create workflows.</li>
+<li>Python can connect to database systems. It can also read and modify files.</li>
+<li>Python can be used to handle big data and perform complex mathematics.</li>
+<li>Python can be used for rapid prototyping, or for production-ready software development.</li></ul><br>
+<h5>Why Python?</h5>
+<li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+<li>Python has a simple syntax similar to the English language.</li>
+<li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
+<li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+<li>Python can be treated in a procedural way, an object-orientated way or a functional way.</li><br>
+<h5>Good to know</h5>
+<li>The most recent major version of Python is Python 3, which we shall be using in this tutorial. However, Python 2, although not being updated with anything other than security updates, is still quite popular.</li>
+<li>In this tutorial Python will be written in a text editor. It is possible to write Python in an Integrated Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when managing larger collections of Python files.</li>
+<li>Python Syntax compared to other programming languages
+Python was designed for readability, and has some similarities to the English language with influence from mathematics.</li>
+<li>Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.</li>
+<li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</li>
+
+<h4>Python Install</h4>
+<p>Many PCs and Macs will have python already installed.
+
+To check if you have python installed on a Windows PC, search in the start bar for Python or run the following on the Command Line (cmd.exe):</p><br>
+
+ <div id="attribute" style="margin-left: 0%">
+     <div id="attribute1">
+      <font color="cyan">
+   <xmp> C:\Users\Your Name>python --version</xmp></font>
+  </div>
+</div>
+<br>
+<p>
+  If you find that you do not have python installed on your computer, then you can download it for free from the following website:<a href="https://www.python.org/"> https://www.python.org/</a>
+</p>
+
+<h4>Python Quickstart</h4>
+<p>Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed.
+
+The way to run a python file is like this on the command line:</p>
+
+<div id="attribute" style="margin-left: 0%">
+     <div id="attribute1">
+      <font color="yellow">
+   <xmp> C:\Users\Your Name>python helloworld.py</xmp></font>
+  </div>
+</div>
+
+<h5> Python First Program </h5>
+<!--<div id="attribute" style="margin-left: 2%">
+  <div id="attribute1">
+    <nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">C </a>
+    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Python</a>
+    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"></a>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+    
+  </div>
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"><font color="cyan">Code:<br><br>
+   print("Hello World!") </font><br><br>
+
+    <font color="yellow">Output:<br><br>
+     &nbsp;&nbsp;&nbsp; "Hello World!"
+   </div></font>
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+</div>
+    
+    </div>
+  </div>-->
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu1">C </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu2">Python</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div id="attribute" style="margin-left: 0%">
+     <div id="attribute1">
+<div class="tab-content">
+  <div class="tab-pane container active" id="home">Welcome</div>
+  <div class="tab-pane container fade" id="menu1">
+    &nbsp;&nbsp;#include&lt; stdio.h &gt;<br>&nbsp;&nbsp;&nbsp;int main(){<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("Hello World!");<br>}
+
+    <br>
+    Output :
+    Hello World !
+
+
+  </div>
+  <div class="tab-pane container fade" id="menu2"><font color="cyan">Code:<br><br>
+   print("Hello World!") </font><br><br>
+
+    <font color="yellow">Output:<br><br>
+     &nbsp;&nbsp;&nbsp; "Hello World!"
+   </font></div>
+</div>
+</div></div>
+
+
+<br>
+<p>
+ <h5> Python Indentation : </h5>
+Indentation refers to the spaces at the beginning of a code line.
+
+Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
+
+Python uses indentation to indicate a block of code.
+</p>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#home1">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu11">C </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu22">Python</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div id="attribute" style="margin-left: 0%">
+     <div id="attribute1">
+<div class="tab-content">
+  <div class="tab-pane container active" id="home1">Condition Checkings</div>
+  <div class="tab-pane container fade" id="menu11">
+    &nbsp;&nbsp;#include&lt; stdio.h &gt;<br>&nbsp;&nbsp;&nbsp;int main(){<br> if(5>2){<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("5 is greater than 2 ");<br>}<br>
+  }
+
+    <br>
+    Output :
+    5 is greater than 2 
+
+
+  </div>
+  <div class="tab-pane container fade" id="menu22"><font color="cyan">Code:<br><br>
+   if(5>2):<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("5 is greater than 2 ");
+    </font><br><br>
+
+    <font color="yellow">Output:<br><br>
+     &nbsp;&nbsp;&nbsp; "5 is greater than 2 "
+   </font>
+<br>
+If we Don't Use indentation then that will cause an error 
+<br>
+<font color="red"> 
+if 5 > 2:
+print("Five is greater than two!")</font>
+<font color="green">
+<br>OutPut :<br>
+  File "demo_indentation_test.py", line 2
+    print("Five is greater than two!")
+        ^
+IndentationError: expected an indented block
+</font>
+
+ </div>
+</div>
+</div>
+</div>
+<h5>Comments</h5>
+<p>Python has commenting capability for the purpose of in-code documentation.
+
+Comments start with a #, and Python will render the rest of the line as a comment:<br>
+
+Example
+Comments in Python:
+
+we can use <font color="yellow">(#)</font> for comment any line
+
+we can use <font color="yellow"> /*  */</font> for comment any particular paragraph</p>
+
+<h4>Python Variable</h4>
+<h5>Creating Variables</h5>
+Variables are containers for storing data values.
+
+Unlike other programming languages, Python has no command for declaring a variable.
+
+A variable is created the moment you first assign a value to it.
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#home1">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu12">C </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#menu23">Python</a>
+  </li>
+</ul>
+
+<div id="attribute" style="margin-left: 0%">
+     <div id="attribute1">
+<div class="tab-content">
+  <div class="tab-pane container active" id="home1">Variable</div>
+  <div class="tab-pane container fade" id="menu12">
+    &nbsp;&nbsp;#include&lt; stdio.h &gt;<br>&nbsp;&nbsp;&nbsp;int main(){<br> int x;<br> string y;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf( "%d",x);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("%d",y);
+  <br>
+  }
+
+    <br>
+    Output :<br>
+     5 <br>
+     john
+
+
+  </div>
+  <div class="tab-pane container fade" id="menu23"><font color="cyan">Code:<br><br>
+   x = 5<br>
+y = "John"<br>
+print(x)<br>
+print(y)<br>
+   
+    </font><br><br>
+
+    <font color="yellow">Output:<br><br>
+     &nbsp;&nbsp;&nbsp; 5 <br> John
+   </font>
+<br>
+
+
+ </div>
+</div>
+</div>
+</div>
+
 </div>
 
 </div>
